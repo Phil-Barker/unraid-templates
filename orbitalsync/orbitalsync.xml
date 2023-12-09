@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/149299-support-orbital-sync/</Support>
   <Project>https://github.com/mattwebbio/orbital-sync</Project>
   <Overview>Orbital Sync synchronizes multiple Pi-hole instances for high availability (HA) using the built-in "teleporter". In other words, it performs a "backup" in the Pi-hole admin interface of your primary Pi-hole instance, and then "restores" that backup to any number of "secondary" Pi-holes also via their admin interface. As a result, it supports the synchronization of anything currently supported by Pi-hole's "teleporter".&#xD;
 &#xD;
