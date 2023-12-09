@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OrbitalSync</Name>
+  <Repository>mattwebbio/orbital-sync</Repository>
+  <Registry>https://github.com/mattwebbio/orbital-sync</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/mattwebbio/orbital-sync</Project>
+  <Overview>Orbital Sync synchronizes multiple Pi-hole instances for high availability (HA) using the built-in "teleporter". In other words, it performs a "backup" in the Pi-hole admin interface of your primary Pi-hole instance, and then "restores" that backup to any number of "secondary" Pi-holes also via their admin interface. As a result, it supports the synchronization of anything currently supported by Pi-hole's "teleporter".&#xD;
+&#xD;
+If you have more than one slave instance you can add extra variables for&#xD;
+  SECONDARY_HOST_2_BASE_URL:&#xD;
+  SECONDARY_HOST_2_PASSWORD:&#xD;
+  SECONDARY_HOST_3_BASE_URL:&#xD;
+  SECONDARY_HOST_3_PASSWORD:&#xD;
+&#xD;
+If one or all of your pihole instances use a custom path which isn't '/admin' (ie. you are running them behind a reverse proxy) you can specify a custom path with SECONDARY_HOST_X_PATH variable, where X is the slave numer or PRIMARY_HOST_PATH for the primary.&#xD;
+&#xD;
+There is no web UI for this app, check the logs to see if it has run successfully.</Overview>
+  <Category>Tools: Network:Privacy</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/420820/187585158-331400c3-18f3-4673-857e-44efd73c6104.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1702163501</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PRIMARY_HOST_BASE_URL" Target="PRIMARY_HOST_BASE_URL" Default="" Mode="" Description="The base URL for your primary pihole instance&#13;&#10;E.g 'https://pihole1.example.com' or 'http://192.168.1.9'" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PRIMARY_HOST_PASSWORD" Target="PRIMARY_HOST_PASSWORD" Default="" Mode="" Description="The password for the admin panel on your primary pihole instance." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SECONDARY_HOST_1_BASE_URL" Target="SECONDARY_HOST_1_BASE_URL" Default="" Mode="" Description="The base URL for your 1st secondary pihole instance&#13;&#10;E.g 'https://pihole2.example.com' or 'http://192.168.1.99'" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SECONDARY_HOST_1_PASSWORD" Target="SECONDARY_HOST_1_PASSWORD" Default="" Mode="" Description="The password for the admin panel on your 1st secondary pihole instance" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="INTERVAL_MINUTES" Target="INTERVAL_MINUTES" Default="30" Mode="" Description="The time in minutes between sync jobs" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
