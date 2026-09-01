@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Maintainer>
-  <Icon>https://phil-barker.com/assets/img/1.png</Icon>
+<CommunityApplications>
   <Profile>
-    Just an ex-developer, now CTO, who loves tinkering with Unraid in his spare time.
+Unraid Docker templates I maintain: OrbitalSync (Pi-hole teleporter sync) and
+Tetherd (keeps containers attached to the network of the VPN sidecar they
+route through).
+
+Ex-developer, now CTO, tinkering with Unraid in spare time.
   </Profile>
-  <WebPage>https://phil-barker.com></WebPage>
-</Maintainer>
+  <Icon>https://phil-barker.com/assets/img/1.png</Icon>
+  <WebPage>https://phil-barker.com</WebPage>
+</CommunityApplications>
